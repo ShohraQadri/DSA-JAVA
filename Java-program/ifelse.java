@@ -4,6 +4,7 @@ public class ifelse {
     /**
      * @param arg
      */
+
     public static void main(String[] arg) {
         Scanner Sc = new Scanner(System.in);
         System.out.println("enter the number");
@@ -140,5 +141,130 @@ public class ifelse {
         // number = number / 10;
         // }
         // System.out.println(product);
+
+        // *********************************************************
+
+        // • Print all factors of a number
+
+        // for (int i = 1; i <= number; i++) {
+        // if (number % i == 0) {
+        // System.out.print(i + " ");
+        // }
+        // }
+
+        // ***********************************************************8
+
+        // • Print first and last digit of a number
+
+        // int lastdigit = number % 10;
+        // int firstdigit = number;
+        // while (firstdigit >= 10) {
+        // firstdigit = firstdigit / 10;
+
+        // }
+        // System.out.println("firstdigit " + firstdigit);
+        // System.out.println("lastdigit " + lastdigit);
+
+        // ********************************************************************
+
+        // Program to check whether a number is Armstrong number or not
+
+        // int copyofNumber = number;
+        // int sum = 0;
+        // while (copyofNumber > 0) {
+        // int lastdigit = copyofNumber % 10;
+        // sum = sum + lastdigit * lastdigit * lastdigit;
+        // copyofNumber = copyofNumber / 10;
+        // }
+
+        // if (sum == number) {
+        // System.out.println("number is armstrong " + number);
+        // } else {
+        // System.out.println("number is not armstrong " + number);
+        // }
+
+        // *************************************************************
+
+        // Question 2 - Program to find Armstrong numbers between 1 to n
+
+        // System.out.println("enter the starting number");
+        // int start = Sc.nextInt();
+        // System.out.println("ente rthe last number");
+        // int last = Sc.nextInt();
+
+        // for (int i = start; i <= last; i++) {
+        // int number = i;
+        // int sum = 0;
+        // int copyofNumber = number;
+        // while (copyofNumber > 0) {
+        // int lastdigit = copyofNumber % 10;
+        // sum = sum + lastdigit * lastdigit * lastdigit;
+        // copyofNumber = copyofNumber / 10;
+        // }
+        // if (sum == number) {
+        // System.out.print(number + " ");
+        // }
+        // }
+        // System.out.println();
+
+        // ************************************************************
+
+        // Question 3 - Program to find prime factors of a number
+
+        // for (int i = 1; i <= number; i++) {
+        // if (number % i == 0 && isPrime(i) == true) {
+        // System.out.print(i + " ");
+        // }
+        // }
+        // System.out.println();
+
+        // *************************************************************
+
+        // Print fibonacci series upto n terms
+
+        // int firstnumber = 0;
+        // int secondnumber = 1;
+        // number = number - 2;
+        // System.out.print(firstnumber + " " + secondnumber + " ");
+
+        // while (number > 0) {
+        // int thirednumber = firstnumber + secondnumber;
+        // System.out.print(thirednumber + " ");
+        // firstnumber = secondnumber;
+        // secondnumber = thirednumber;
+        // number--;
+        // }
+
+        // ********************************************************
+
+        // Convert number from Binary to Decimal
+
+        int sum = 0;
+        int power = 1;
+        while (number > 0) {
+            int lastdigit = number % 10;
+            sum = sum + lastdigit * power;
+            power = power * 2;
+            number = number / 10;
+        }
+        System.out.println(sum);
     }
+
+    // ************************************************************
+    // second part of question 3 function
+    // Question 3 - Program to find prime factors of a number
+
+    // public static boolean isPrime(int number) {
+    // int count = 0;
+    // for (int i = 1; i <= number; i++) {
+    // if (number % i == 0) {
+    // count++;
+    // }
+
+    // }
+    // if (count == 2) {
+    // return true;
+    // } else {
+    // return false;
+    // }
 }
