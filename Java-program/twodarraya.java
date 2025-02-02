@@ -17,6 +17,7 @@ public abstract class twodarraya {
     // 18 14 10
     // 19 15
     // 20
+
     public static void move(int R, int C, int arr[][], int col) {
         while (R >= 0 && C < col) {
             System.out.print(arr[R][C] + " ");
