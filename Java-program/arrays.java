@@ -155,22 +155,69 @@ public class arrays {
 
         // duplicate number in array
 
-        int maximumnumber = 0;
-        for (int i = 1; i < number; i++) {
-            maximumnumber = Math.max(maximumnumber, arr[i]);
-        }
-        int fre[] = new int[maximumnumber + 1];
-        for (int i = 0; i < number; i++) {
-            fre[arr[i]]++;
-        }
-        int count = 0;
+        // int maximumnumber = 0;
+        // for (int i = 1; i < number; i++) {
+        // maximumnumber = Math.max(maximumnumber, arr[i]);
+        // }
+        // int fre[] = new int[maximumnumber + 1];
+        // for (int i = 0; i < number; i++) {
+        // fre[arr[i]]++;
+        // }
+        // int count = 0;
 
-        for (int i = 0; i < maximumnumber + 1; i++) {
-            if (fre[i] >= 2) {
-                count++;
-            }
+        // for (int i = 0; i < maximumnumber + 1; i++) {
+        // if (fre[i] >= 2) {
+        // count++;
+        // }
+        // }
+        // System.out.println("duplicate number " + count);
+
+        // *************************************************************
+
+        // find the minimum element and second last minimum element in this array
+
+        // int miniE = (int) (1e9);
+        // int SminiE = (int) (1e9);
+        // for (int i = 0; i < number; i++) {
+        // if (arr[i] < miniE) {
+        // SminiE = miniE;
+        // miniE = arr[i];
+        // } else if (arr[i] > miniE && arr[i] < SminiE) {
+        // SminiE = arr[i];
+        // }
+        // }
+        // System.out.println("minimum element is: " + miniE);
+        // System.out.println("second minimum element is: " + SminiE);
+
+        // ****************************************************************
+
+        // reverse the array
+        // int i = 0;
+        // int j = number - 1;
+
+        // while (i < j) {
+        // int temp = arr[i];
+        // arr[i] = arr[j];
+        // arr[j] = temp;
+
+        // i++;
+        // j--;
+        // }
+        // for (i = 0; i < number; i++) {
+        // System.out.print(arr[i] + " ");
+        // }
+        // System.out.println();
+
+        // *********************************************************
+
+        // find the median element in the aaray
+
+        if (number % 2 != 0) {
+            System.out.println("median element is: " + arr[number / 2]);
+        } else {
+            double median = (double) (arr[number / 2] + arr[(number / 2) - 1]) / 2.0;
+            System.out.println("median element is: " + median);
         }
-        System.out.println("duplicate number " + count);
     }
 
 }
