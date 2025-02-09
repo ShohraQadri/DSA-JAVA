@@ -305,45 +305,97 @@ public class basictwodarray {
         // 14 16 18
 
         // add two matrix
-        System.out.println("for matrix 1");
-        System.out.println("enter the row number");
-        int row = Sc.nextInt();
-        System.out.println(("enetr the column number"));
-        int col = Sc.nextInt();
-        System.out.println("enter the element");
-        int myarr[][] = new int[row][col];
+        // System.out.println("for matrix 1");
+        // System.out.println("enter the row number");
+        // int row = Sc.nextInt();
+        // System.out.println(("enetr the column number"));
+        // int col = Sc.nextInt();
+        // System.out.println("enter the element");
+        // int myarr[][] = new int[row][col];
 
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                myarr[i][j] = Sc.nextInt();
-            }
-        }
-        System.out.println("for matrix two");
-        System.out.println("enter the row number");
-        int row1 = Sc.nextInt();
-        System.out.println(("enetr the column number"));
-        int col1 = Sc.nextInt();
-        System.out.println("enter the element");
-        int myarr1[][] = new int[row1][col1];
-        int subarray[][] = new int[row][col];
-        for (int i = 0; i < row1; i++) {
-            for (int j = 0; j < col1; j++) {
-                myarr1[i][j] = Sc.nextInt();
-            }
-        }
+        // for (int i = 0; i < row; i++) {
+        // for (int j = 0; j < col; j++) {
+        // myarr[i][j] = Sc.nextInt();
+        // }
+        // }
+        // System.out.println("for matrix two");
+        // System.out.println("enter the row number");
+        // int row1 = Sc.nextInt();
+        // System.out.println(("enetr the column number"));
+        // int col1 = Sc.nextInt();
+        // System.out.println("enter the element");
+        // int myarr1[][] = new int[row1][col1];
+        // int subarray[][] = new int[row][col];
+        // for (int i = 0; i < row1; i++) {
+        // for (int j = 0; j < col1; j++) {
+        // myarr1[i][j] = Sc.nextInt();
+        // }
+        // }
 
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                subarray[i][j] = myarr[i][j] + myarr[i][j];
-            }
-        }
+        // for (int i = 0; i < row; i++) {
+        // for (int j = 0; j < col; j++) {
+        // subarray[i][j] = myarr[i][j] + myarr[i][j];
+        // }
+        // }
 
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                System.out.print(subarray[i][j] + " ");
-            }
-            System.out.println();
-        }
+        // for (int i = 0; i < row; i++) {
+        // for (int j = 0; j < col; j++) {
+        // System.out.print(subarray[i][j] + " ");
+        // }
+        // System.out.println();
+        // }
+
+        // ************************************************************
+        // 1 2 3
+        // 4 5 6
+        // 7 8 9
+
+        // output
+        // 7 4 1
+        // 8 5 2
+        // 9 6 3
+
+        // System.out.print("Enter the size of NxN matrix: ");
+        // int n = Sc.nextInt(); // Square matrix (N x N)
+
+        // int myarr[][] = new int[n][n];
+
+        // System.out.println("Enter the matrix elements:");
+        // for (int i = 0; i < n; i++) {
+        // for (int j = 0; j < n; j++) {
+        // myarr[i][j] = Sc.nextInt();
+        // }
+        // }
+
+        // // Step 1: Transpose the matrix
+        // for (int i = 0; i < n; i++) {
+        // for (int j = i + 1; j < n; j++) { // Only swap for j > i
+        // int temp = myarr[i][j];
+        // myarr[i][j] = myarr[j][i];
+        // myarr[j][i] = temp;
+        // }
+        // }
+
+        // // Step 2: Reverse each row
+        // for (int i = 0; i < n; i++) {
+        // int left = 0, right = n - 1;
+        // while (left < right) {
+        // int temp = myarr[i][left];
+        // myarr[i][left] = myarr[i][right];
+        // myarr[i][right] = temp;
+        // left++;
+        // right--;
+        // }
+        // }
+
+        // // Printing the rotated matrix
+        // System.out.println("Rotated Matrix (90° Clockwise):");
+        // for (int i = 0; i < n; i++) {
+        // for (int j = 0; j < n; j++) {
+        // System.out.print(myarr[i][j] + " ");
+        // }
+        // System.out.println();
+        // }
 
     }
 }
