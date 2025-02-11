@@ -67,37 +67,71 @@ public abstract class twodarraya {
         // 84 69 54
         // 138 114 90
 
-        System.out.println("enter the size of array");
-        int n = Sc.nextInt();
+        // System.out.println("enter the size of array");
+        // int n = Sc.nextInt();
 
-        System.out.println("enter the element in array");
-        int arr[][] = new int[n][n];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+        // System.out.println("enter the element in array");
+        // int arr[][] = new int[n][n];
+        // for (int i = 0; i < n; i++) {
+        // for (int j = 0; j < n; j++) {
+        // arr[i][j] = Sc.nextInt();
+        // }
+        // }
+        // System.out.println("enter the second array element in array");
+        // int arr1[][] = new int[n][n];
+        // for (int i = 0; i < n; i++) {
+        // for (int j = 0; j < n; j++) {
+        // arr1[i][j] = Sc.nextInt();
+        // }
+        // }
+        // int arr2[][] = new int[n][n];
+
+        // for (int i = 0; i < n; i++) {
+        // for (int j = 0; j < n; j++) {
+        // arr2[i][j] = 0;
+        // for (int k = 0; k < n; k++) {
+        // arr2[i][j] += arr[i][k] * arr1[k][j];
+
+        // }
+        // }
+        // }
+        // for (int i = 0; i < n; i++) {
+        // for (int j = 0; j < n; j++) {
+        // System.out.print(arr2[i][j] + " ");
+        // }
+        // System.out.println();
+        // }
+
+        // ********************************************************
+
+        // multiply by target value
+
+        // 1 2 3
+        // 4 5 6
+        // 7 8 9
+
+        // 2 4 6
+        // 8 10 12
+        // 14 16 18
+
+        System.out.println("enter the row size");
+        int row = Sc.nextInt();
+        System.out.println("enter the column size");
+        int col = Sc.nextInt();
+        System.out.println("enter the multipication number");
+        int mul = Sc.nextInt();
+
+        int arr[][] = new int[row][col];
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.println("enter the element");
                 arr[i][j] = Sc.nextInt();
             }
         }
-        System.out.println("enter the second array element in array");
-        int arr1[][] = new int[n][n];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                arr1[i][j] = Sc.nextInt();
-            }
-        }
-        int arr2[][] = new int[n][n];
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                arr2[i][j] = 0;
-                for (int k = 0; k < n; k++) {
-                    arr2[i][j] += arr[i][k] * arr1[k][j];
-
-                }
-            }
-        }
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.print(arr2[i][j] + " ");
+        System.out.println("your output is:");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.print(arr[i][j] * mul + " ");
             }
             System.out.println();
         }
