@@ -15,13 +15,15 @@ public class firstString {
     }
 
     public static void main(String[] arg) {
+        Scanner Sc = new Scanner(System.in);
+
+        // *********************************************************
 
         // fint the target string
         // input : abc abc abc
         // target : b
         // output : 1,5,9
 
-        Scanner Sc = new Scanner(System.in);
         // System.out.println("enter the String");
         // String s = Sc.nextLine();
         // System.out.println("enter the target String");
