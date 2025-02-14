@@ -1,6 +1,23 @@
 import java.util.Scanner;
 
 public class fun {
+    public static boolean isPrime(int num) {
+        if (num <= 1)
+            return false; // 1 ya negative numbers prime nahi hote
+        if (num == 2)
+            return true; // 2 prime hota hai
+        if (num % 2 == 0)
+            return false; // Even numbers (except 2) prime nahi hote
+
+        // Loop chalaye sirf odd numbers ke liye, sqrt(num) tak
+        for (int i = 3; i <= Math.sqrt(num); i += 2) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     // add two number function
     public static int sum(int num1, int num2) {
         return (num1 + num2);
@@ -103,17 +120,30 @@ public class fun {
         // int end = Sc.nextInt();
         // printprime(start, end);
 
-        System.out.println("enter the number of n");
-        int n = Sc.nextInt();
-        System.out.println("enter the number of r");
-        int r = Sc.nextInt();
+        // System.out.println("enter the number of n");
+        // int n = Sc.nextInt();
+        // System.out.println("enter the number of r");
+        // int r = Sc.nextInt();
 
-        long n_factorial = factorial(n);
-        long r_factorial = factorial(r);
-        long nR_factorial = factorial(n - r);
-        long answer = n_factorial / r_factorial;
-        answer = answer / nR_factorial;
-        System.out.println(answer);
+        // long n_factorial = factorial(n);
+        // long r_factorial = factorial(r);
+        // long nR_factorial = factorial(n - r);
+        // long answer = n_factorial / r_factorial;
+        // answer = answer / nR_factorial;
+        // System.out.println(answer);
+
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = sc.nextInt();
+        sc.close();
+
+        if (isPrime(number)) {
+            System.out.println(number + " is a prime number.");
+        } else {
+            System.out.println(number + " is NOT a prime number.");
+        }
+
     }
 
 }

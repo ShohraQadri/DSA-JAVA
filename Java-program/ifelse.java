@@ -116,19 +116,19 @@ public class ifelse {
         // *******************************************
         // • Print all prime numbers from 1 to N.
 
-        // for (int i = 2; i <= number; i++) {
-        // boolean isPrime = true;
-        // for (int j = 2; j < i; j++) {
-        // if (i % j == 0) {
-        // isPrime = false;
-        // break; // If divisible, no need to check further
-        // }
-        // }
+        for (int i = 2; i <= number; i++) {
+            boolean isPrime = true;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                    break; // If divisible, no need to check further
+                }
+            }
 
-        // if (isPrime) {
-        // System.out.print(i + " ");
-        // }
-        // }
+            if (isPrime) {
+                System.out.print(i + " ");
+            }
+        }
 
         // *************************************************
 
@@ -239,15 +239,15 @@ public class ifelse {
 
         // Convert number from Binary to Decimal
 
-        int sum = 0;
-        int power = 1;
-        while (number > 0) {
-            int lastdigit = number % 10;
-            sum = sum + lastdigit * power;
-            power = power * 2;
-            number = number / 10;
-        }
-        System.out.println(sum);
+        // int sum = 0;
+        // int power = 1;
+        // while (number > 0) {
+        // int lastdigit = number % 10;
+        // sum = sum + lastdigit * power;
+        // power = power * 2;
+        // number = number / 10;
+        // }
+        // System.out.println(sum);
     }
 
     // ************************************************************
@@ -267,4 +267,8 @@ public class ifelse {
     // } else {
     // return false;
     // }
+
+    // ++++++++++++++++++++++++++++++++++++++===
+    // given number is prime or not
+
 }
