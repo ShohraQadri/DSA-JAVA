@@ -27,7 +27,8 @@ public class practice {
 
         // *********************************
         // find minimum and maximum number
-
+        // input [1,2,3,4,5,6,7]
+        // output [maximum - 7, minimum - 1]
         // System.out.println("enter the size of array");
         // int number = Sc.nextInt();
         // int arr[] = new int[number];
@@ -48,6 +49,11 @@ public class practice {
         // System.out.println("minimum element is : " + minimum);
 
         // +++++++++++++++++++++++++++++++++++++++++++++++
+
+        // sum of middle line
+        // 1 2 3
+        // 4 5 6 - - - 1+5+9= 15
+        // 7 8 9
 
         // System.out.println("enter the row size");
         // int row = Sc.nextInt();
@@ -108,23 +114,30 @@ public class practice {
         // }
         // System.out.println("first row elsement sum is: " + sum);
 
-        String s = Sc.nextLine();
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-        char[] charArray = s.toCharArray();
+        // reverse string
+        // input HELLO
+        // OLLEH
 
-        int i = 0;
-        int j = charArray.length - 1;
+        // System.out.println("enter the string");
+        // String s = Sc.nextLine();
 
-        while (i < j) {
-            char temp = charArray[i];
-            charArray[i] = charArray[j];
-            charArray[j] = temp;
-            i++;
-            j--;
-        }
+        // char[] charArray = s.toCharArray();
 
-        String reversedString = new String(charArray);
-        System.out.println("Reversed string: " + reversedString);
+        // int i = 0;
+        // int j = charArray.length - 1;
+
+        // while (i < j) {
+        // char temp = charArray[i];
+        // charArray[i] = charArray[j];
+        // charArray[j] = temp;
+        // i++;
+        // j--;
+        // }
+
+        // String reversedString = new String(charArray);
+        // System.out.println("Reversed string: " + reversedString);
 
         Sc.close();
     }
