@@ -83,26 +83,49 @@ public class practice {
         // }
 
         // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // output 6
         // add the first row element
+        // 1 2 3 - - -6
+        // 4 5 6
+        // 7 8 9
 
-        System.out.println("enter the row size");
-        int row = Sc.nextInt();
-        System.out.println("enter the column size");
-        int col = Sc.nextInt();
-        int arr1[][] = new int[row][col];
+        // System.out.println("enter the row size");
+        // int row = Sc.nextInt();
+        // System.out.println("enter the column size");
+        // int col = Sc.nextInt();
+        // int arr1[][] = new int[row][col];
 
-        System.out.println("enter the elements");
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                arr1[i][j] = Sc.nextInt();
-            }
+        // System.out.println("enter the elements");
+        // for (int i = 0; i < row; i++) {
+        // for (int j = 0; j < col; j++) {
+        // arr1[i][j] = Sc.nextInt();
+        // }
+        // }
+
+        // int sum = 0;
+        // for (int j = 0; j < col; j++) {
+        // sum += arr1[0][j];
+        // }
+        // System.out.println("first row elsement sum is: " + sum);
+
+        String s = Sc.nextLine();
+
+        char[] charArray = s.toCharArray();
+
+        int i = 0;
+        int j = charArray.length - 1;
+
+        while (i < j) {
+            char temp = charArray[i];
+            charArray[i] = charArray[j];
+            charArray[j] = temp;
+            i++;
+            j--;
         }
 
-        int sum = 0;
-        for (int j = 0; j < col; j++) {
-            sum += arr1[0][j];
-        }
-        System.out.println("first row elsement sum is: " + sum);
+        String reversedString = new String(charArray);
+        System.out.println("Reversed string: " + reversedString);
+
         Sc.close();
     }
 }
