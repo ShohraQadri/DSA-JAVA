@@ -138,6 +138,25 @@ public class practice {
 
         // String reversedString = new String(charArray);
         // System.out.println("Reversed string: " + reversedString);
+        // input the 5
+        // out put
+        // ----*
+        // ---* *
+        // --* * *
+        // -* * * *
+        // * * * * *
+        System.out.println("enter the row size");
+        int number = Sc.nextInt();
+        for (int i = 1; i <= number; i++) {
+            for (int j = 1; j <= number - i; j++) {
+
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
 
         Sc.close();
     }
