@@ -12,27 +12,13 @@ public class Frequency {
             arr[i] = Sc.nextInt();
         }
 
-        // step 1
-        int maximum = arr[0];
         for (int i = 0; i < number; i++) {
-            if (arr[i] > maximum) {
-                maximum = arr[i];
-            }
-        }
-
-        // size of frequency array
-        int size = maximum + 1;
-
-        // create frequency array
-
-        int fre[] = new int[size];
-        for (int i = 0; i < number; i++) {
-            fre[arr[i]]++; // Increment frequency count
-        }
-        for (int i = 0; i < size; i++) {
-            if (fre[i] > 0) {
-                System.out.println(i + "-->" + fre[arr[i]]);
+            int sum = 0;
+            for (int j = i; j < number; j++) {
+                sum += arr[j];
+                System.out.println(i + "--> " + j + " = " + sum);
             }
         }
     }
+
 }
